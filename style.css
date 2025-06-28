@@ -41,13 +41,14 @@ body::before {
 
 
 #search {
+  display: block;
   font-size: 16px; 
   padding: 10px;
   width: 80%;
   max-width: 400px;
   border-radius: 20px;
   border: none;
-  margin-bottom: 20px;
+  margin: 10px auto 20px;
   text-align: center;
 }
 #search:focus {
