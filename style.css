@@ -4,7 +4,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, #c471f5, #fa71cd);
   color: white;
-  padding-bottom: 100px; /* tránh bị đè bởi player */
+  padding-bottom: 100px;
 }
 
 .app-container {
@@ -86,7 +86,7 @@ body {
 }
 
 @keyframes rotate {
-  0%   { transform: rotate(0deg); }
+  0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
 
@@ -128,4 +128,32 @@ body {
 
 #progress-bar {
   width: 150px;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 480px) {
+  .zing-player {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .zing-player .left {
+    margin-bottom: 10px;
+  }
+
+  .zing-player img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #progress-bar {
+    width: 100%;
+  }
+
+  .controls {
+    justify-content: space-between;
+    width: 100%;
+  }
 }
