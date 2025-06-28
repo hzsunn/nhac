@@ -61,21 +61,25 @@ function formatTime(time) {
 function renderPlaylist(filter = "") {
   playlistEl.innerHTML = "";
 
-  // 👉 Thêm dòng sort ở đây
-  const sortedTracks = tracks
+  const filteredTracks = tracks
     .filter(t => t.name.toLowerCase().includes(filter.toLowerCase()))
-    .sort((a, b) => a.name.localeCompare(b.name)); // ← sắp A-Z
+    .sort((a, b) => a.name.localeCompare(b.name));
 
-    // Cập nhật bộ đếm
+  // 👉 Cập nhật bộ đếm bài hát
   const trackCountEl = document.getElementById("track-count");
-  trackCountEl.textContent = `🎵 Tổng số bài hát: ${filteredTracks.length}`;
+  if (trackCountEl) {
+    trackCountEl.textContent = `🎵 Tổng số bài hát: ${filteredTracks.length}`;
+  }
 
   filteredTracks.forEach((track, index) => {
     const li = document.createElement("li");
-    li.innerHTML = `<div class="text"><strong>${track.name}</strong></div>`;
-    li.addEventListener("click", () => playTrack(tracks.indexOf(track)));
+    li.innerHTML = `
+      <div class="text"><strong>${track.name}</strong></div>
+    `;
+    li.addEventListener("click", () => playTrack(tracks.indexOf(track))); // giữ đúng index
     playlistEl.appendChild(li);
   });
+}
 
 }
 
