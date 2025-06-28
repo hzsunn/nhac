@@ -42,16 +42,21 @@ function formatTime(time) {
 }
 function renderPlaylist(filter = "") {
   playlistEl.innerHTML = "";
-  tracks
+
+  // 👉 Thêm dòng sort ở đây
+  const sortedTracks = tracks
     .filter(t => t.name.toLowerCase().includes(filter.toLowerCase()))
-    .forEach((track, index) => {
-      const li = document.createElement("li");
-      li.innerHTML = `
-  <div class="text"><strong>${track.name}</strong></div>
-`;
-      li.addEventListener("click", () => playTrack(index));
-      playlistEl.appendChild(li);
-    });
+    .sort((a, b) => a.name.localeCompare(b.name)); // ← sắp A-Z
+
+  sortedTracks.forEach((track, index) => {
+    const li = document.createElement("li");
+    li.innerHTML = `
+      <div class="text"><strong>${track.name}</strong></div>
+    `;
+    li.addEventListener("click", () => playTrack(tracks.indexOf(track))); // giữ đúng index
+    playlistEl.appendChild(li);
+  });
+
 }
 
 function playTrack(index) {
