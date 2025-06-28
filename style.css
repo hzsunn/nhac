@@ -33,6 +33,14 @@ body::before {
   padding: 20px;
   text-align: center;
 }
+#page-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 36px;
+  color: hotpink; /* hoặc #ff69b4, #ff66cc */
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
 
 #search {
   padding: 10px;
