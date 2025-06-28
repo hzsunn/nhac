@@ -14,6 +14,7 @@ const trackTitle = document.getElementById("track-title");
 const trackArtist = document.getElementById("track-artist");
 
 const playBtn = document.getElementById("play-btn");
+const playIcon = document.getElementById("play-icon"); // 👉 cần có icon con trong nút play
 const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
 const progressBar = document.getElementById("progress-bar");
@@ -43,7 +44,8 @@ function playTrack(index) {
   trackTitle.textContent = track.name;
   trackArtist.textContent = "Không rõ nghệ sĩ";
   audioPlayer.play();
-  playBtn.textContent = "⏸";
+  playIcon.classList.remove("fa-play");
+  playIcon.classList.add("fa-pause");
   document.body.classList.add("playing");
   wave.classList.add("playing");
 }
@@ -51,12 +53,14 @@ function playTrack(index) {
 playBtn.addEventListener("click", () => {
   if (audioPlayer.paused) {
     audioPlayer.play();
-    playBtn.textContent = "⏸";
+    playIcon.classList.remove("fa-play");
+    playIcon.classList.add("fa-pause");
     document.body.classList.add("playing");
     wave.classList.add("playing");
   } else {
     audioPlayer.pause();
-    playBtn.textContent = "▶️";
+    playIcon.classList.remove("fa-pause");
+    playIcon.classList.add("fa-play");
     document.body.classList.remove("playing");
     wave.classList.remove("playing");
   }
