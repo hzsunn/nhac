@@ -6,6 +6,8 @@ const tracks = [
 ];
 
 let currentTrackIndex = 0;
+const currentTimeEl = document.getElementById("current-time");
+const durationEl = document.getElementById("duration");
 const playlistEl = document.getElementById("playlist");
 const audioPlayer = document.getElementById("audio-player");
 
@@ -21,6 +23,11 @@ const progressBar = document.getElementById("progress-bar");
 const searchInput = document.getElementById("search");
 const wave = document.getElementById("wave");
 
+function formatTime(time) {
+  const minutes = Math.floor(time / 60);
+  const seconds = Math.floor(time % 60).toString().padStart(2, '0');
+  return `${minutes}:${seconds}`;
+}
 function renderPlaylist(filter = "") {
   playlistEl.innerHTML = "";
   tracks
@@ -81,6 +88,14 @@ audioPlayer.addEventListener("timeupdate", () => {
 
 progressBar.addEventListener("input", () => {
   audioPlayer.currentTime = (progressBar.value / 100) * audioPlayer.duration;
+});
+
+audioPlayer.addEventListener("timeupdate", () => {
+  progressBar.value = (audioPlayer.currentTime / audioPlayer.duration) * 100 || 0;
+  currentTimeEl.textContent = formatTime(audioPlayer.currentTime);
+  if (!isNaN(audioPlayer.duration)) {
+    durationEl.textContent = formatTime(audioPlayer.duration);
+  }
 });
 
 audioPlayer.addEventListener("ended", () => {
