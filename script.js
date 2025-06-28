@@ -14,7 +14,13 @@ const tracks = [
   { name: "Điều Ước Giản Đơn", file: "music/Dugd.m4a" },
   { name: "Hẹn Ước Từ Hư Vô", file: "music/Henuoc.m4a" },
   { name: "Đơn Giản Anh Yêu Em", file: "music/Dgaye.m4a" },
-
+  { name: "10 Mất 1 Còn 0", file: "music/1010.m4a" },
+  { name: "Bản Tình Ca Đầu Tiên", file: "music/Btcdt.m4a" },
+  { name: "Đếm Ngày Xa Em", file: "music/Demngayxaem.m4a" },
+  { name: "Chỉ Là Muốn Nói", file: "music/Chila.m4a" },
+  { name: "Anh Chẳng Sao Đâu", file: "music/Acsd.m4a" },
+  { name: "Hai Chữ Đã Từng", file: "music/2cdt.m4a" },
+  { name: "Dòng Thời Gian", file: "music/Dtg.m4a" },
 ];
 
 let currentTrackIndex = 0;
