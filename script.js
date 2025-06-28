@@ -3,6 +3,12 @@ const commonThumbnail = "music/IMG_0947.jpeg";
 const tracks = [
   { name: "Em Ơi Em Đừng Khóc", file: "music/Emoiem.m4a" },
   { name: "Đừng Yêu Ai Em Nhé", file: "music/Dyaen.m4a" },
+  { name: "E Là Không Thể", file: "music/Elakhongthe.m4a" },
+  { name: "Gấp Đôi Yêu Thương", file: "music/Gap2.m4a" },
+  { name: "Hạnh Phúc Cuối Cùng", file: "music/Hpcuoicung.m4a" },
+  { name: "Tìm Về", file: "music/Timve.m4a" },
+  { name: "Ngủ Ngon Nhé Vợ Tương Lai", file: "music/Nnn.m4a" },
+  { name: "Gấp Đôi Yêu Thương", file: "music/Gap2.m4a" },
 
 ];
 
