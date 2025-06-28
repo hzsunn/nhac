@@ -33,6 +33,23 @@ const tracks = [
   { name: "Từ Nay Em Là Vợ Anh", file: "music/TNELVA.m4a" },
   { name: "Sau Này Em Cưới Ai Rồi", file: "music/Snecar.m4a" },
   { name: "Khoảng Cách Đôi Ta", file: "music/Kcdt.m4a" },
+  { name: "Anh Sẽ Là Người Ra Đi", file: "music/Aslnrd.m4a" },
+  { name: "Chuyện Như Chưa Bắt Đầu", file: "music/Cncbd.m4a" },
+  { name: "Chúng Ta Không Thuộc Về Nhau", file: "music/Ctktvn.m4a" },
+  { name: "Cứ Ngỡ Là Anh", file: "music/Cungolaanh.m4a" },
+  { name: "Em Là Món Quà Vô Giá", file: "music/Elmqvg.m4a" },
+  { name: "Giúp Anh Trả Lời Những Câu Hỏi", file: "music/Gatlnch.m4a" },
+  { name: "Giấc Mơ 1 Cuộc Tình", file: "music/Gm1ct.m4a" },
+  { name: "Giả Vờ Nhưng Anh Yêu Em", file: "music/Gvnaye.m4a" },
+  { name: "Hình Bóng Của Mây", file: "music/Hinhbongcuamay.m4a" },
+  { name: "Sợ Phải Kết Thúc", file: "music/Sophaiketthuc.m4a" },
+  { name: "Tình Đẹp Đến Mấy Cũng Tàn", file: "music/tanthui.m4a" },
+  { name: "Trả Cho Em", file: "music/Trachoem.m4a" },
+  { name: "Tình Thương Phu Thê", file: "music/Ttpt.m4a" },
+  { name: "Tình Yêu Mang Theo", file: "music/Tymt.m4a" },
+  { name: "Vết Thương Trong Tim", file: "music/Vetthuongtrongtim.m4a" },
+  { name: "Vợ Tuyệt Vời Nhất", file: "music/Vtvn.m4a" },
+  { name: "Yêu Cô Bạn Thân", file: "music/Ycbt.m4a" },
 ];
 
 let currentTrackIndex = 0;
