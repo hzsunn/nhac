@@ -41,7 +41,7 @@ function playTrack(index) {
   audioPlayer.src = track.file;
   trackImg.src = commonThumbnail;
   trackTitle.textContent = track.name;
-  trackArtist.textContent = "Không rõ nghệ sĩ";
+  trackArtist.textContent = "Đặng Hồng";
   audioPlayer.play();
   playIcon.classList.remove("fa-play");
   playIcon.classList.add("fa-pause");
