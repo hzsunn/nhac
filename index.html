@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>🎵 Trình phát nhạc</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Zing MP3 Mini</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>🎵 Nhạc của Huyền ❤️</h1>
+  <div class="app-container">
+    <h1>🎵 Zing MP3 Mini</h1>
 
-    <!-- Tìm kiếm + Nút toggle -->
-    <div class="search-container">
-      <input type="text" id="search" placeholder="🔍 Tìm bài hát..." />
-      <button id="toggle-playlist" title="Ẩn/Hiện danh sách">🎵</button>
-    </div>
+    <input type="text" id="search" placeholder="Tìm bài hát..." />
 
-    <!-- Danh sách phát -->
-    <ul id="playlist"></ul>
-
-    <!-- Trình phát nhạc -->
-    <audio id="audio-player" controls autoplay></audio>
+    <ul id="playlist" class="playlist"></ul>
   </div>
 
+  <!-- Trình phát -->
+  <div class="zing-player">
+    <div class="left">
+      <img id="track-img" src="https://i.imgur.com/0rVeh4P.png" />
+      <div class="info">
+        <div id="track-title">Chưa chọn bài</div>
+        <div id="track-artist">Không rõ nghệ sĩ</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="prev-btn">⏮</button>
+      <button id="play-btn">▶️</button>
+      <button id="next-btn">⏭</button>
+      <input type="range" id="progress-bar" value="0" />
+    </div>
+  </div>
+
+  <audio id="audio-player"></audio>
   <script src="script.js"></script>
 </body>
 </html>
