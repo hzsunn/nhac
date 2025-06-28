@@ -1,7 +1,7 @@
-const commonThumbnail = "music/thumb.jpg";
+const commonThumbnail = "music/IMG_0947.jpeg";
 
 const tracks = [
-  { name: "Yêu Một Người", file: "music/song1.mp3" },
+  { name: "Yêu Một Người", file: "music/Emoiem.m4a" },
   { name: "Chạy Về Khóc Với Anh", file: "music/song2.mp3" }
 ];
 
