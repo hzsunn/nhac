@@ -68,7 +68,7 @@ function renderPlaylist(filter = "") {
   // 👉 Cập nhật bộ đếm bài hát
   const trackCountEl = document.getElementById("track-count");
   if (trackCountEl) {
-    trackCountEl.textContent = `🎵 Tổng số bài hát: ${filteredTracks.length}`;
+    trackCountEl.textContent = `Tổng số bài hát: ${filteredTracks.length}`;
   }
 
   filteredTracks.forEach((track, index) => {
