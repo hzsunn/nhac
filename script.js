@@ -28,9 +28,8 @@ function renderPlaylist(filter = "") {
     .forEach((track, index) => {
       const li = document.createElement("li");
       li.innerHTML = `
-        <img src="${commonThumbnail}" alt="${track.name}" />
-        <div class="text"><strong>${track.name}</strong></div>
-      `;
+  <div class="text"><strong>${track.name}</strong></div>
+`;
       li.addEventListener("click", () => playTrack(index));
       playlistEl.appendChild(li);
     });
