@@ -2,8 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  color: pink;
-  padding-bottom: 100px;
+  background: #000;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   /* Ảnh nền */
   background-image: url('bgr.JPG'); /* ← ảnh nền đặt trong thư mục images/ */
@@ -30,8 +33,10 @@ body::before {
 }
 
 .app-container {
-  padding: 20px;
-  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 
@@ -50,11 +55,13 @@ body::before {
   box-shadow: 0 0 6px hotpink;
 }
 
-.playlist {
+#playlist {
+  flex: 1;
+  overflow-y: auto; /* 👈 cho phép cuộn */
+  padding: 0 20px;
   list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 500px;
+  margin: 0;
+  max-height: calc(100vh - 240px);
 }
 
 .playlist li {
