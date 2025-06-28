@@ -43,6 +43,7 @@ body::before {
   color: hotpink;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 #search {
@@ -54,11 +55,13 @@ body::before {
   border-radius: 20px;
   border: none;
   margin: 0 auto;
+  background-color: pink;
+  color: white;
   text-align: center;
 }
 #search:focus {
   outline: none;
-  box-shadow: 0 0 6px hotpink;
+  box-shadow: 0 0 6px white;
 }
 
 #playlist {
