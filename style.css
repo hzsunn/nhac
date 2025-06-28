@@ -48,7 +48,7 @@ body::before {
   max-width: 400px;
   border-radius: 20px;
   border: none;
-  margin: 10px auto 20px;
+  margin: 0 auto;
   text-align: center;
 }
 #search:focus {
