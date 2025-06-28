@@ -21,6 +21,18 @@ const tracks = [
   { name: "Anh Chẳng Sao Đâu", file: "music/Acsd.m4a" },
   { name: "Hai Chữ Đã Từng", file: "music/2cdt.m4a" },
   { name: "Dòng Thời Gian", file: "music/Dtg.m4a" },
+    { name: "Ừ Có Anh Đây", file: "music/Ucoanhday.m4a" },
+  { name: "Làm Vợ Anh Nhé", file: "music/Lvan.m4a" },
+  { name: "Thương Em Đến Già", file: "music/Tedg.m4a" },
+  { name: "Thằng Hầu", file: "music/Thanghau.m4a" },
+  { name: "Mưa Tháng Tư", file: "music/Muat4.m4a" },
+  { name: "Váy Cưới", file: "music/Vaycuoi.m4a" },
+  { name: "Suy Nghĩ Trong Anh", file: "music/Snta.m4a" },
+  { name: "Xa Muôn Trùng Mây", file: "music/Xamuontrungmay.m4a" },
+  { name: "Sau Tất Cả", file: "music/Sautatca.m4a" },
+  { name: "Từ Nay Em Là Vợ Anh", file: "music/TNELVA.m4a" },
+  { name: "Sau Này Em Cưới Ai Rồi", file: "music/Snecar.m4a" },
+  { name: "Khoảng Cách Đôi Ta", file: "music/Kcdt.m4a" },
 ];
 
 let currentTrackIndex = 0;
