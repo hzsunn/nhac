@@ -6,6 +6,13 @@ body {
   color: white;
   padding-bottom: 100px;
 }
+.time-display {
+  color: #ccc;
+  font-size: 12px;
+  min-width: 70px;
+  margin: 0 10px;
+  display: inline-block;
+}
 
 .app-container {
   padding: 20px;
