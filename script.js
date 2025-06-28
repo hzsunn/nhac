@@ -1,51 +1,98 @@
 const tracks = [
-  { name: "Em Ơi Em Đừng Khóc", file: "music/Emoiem.m4a" },
-  { name: "Bài Hát 2", file: "music/song2.mp3" },
-  { name: "Bài Hát 3", file: "music/song3.mp3" }
+  {
+    name: "Em Ơi Em Đừng Khóc",
+    artist: "Đặng Hồng",
+    file: "music/Emoiem.m4a",
+    image: "music/thumb1.jpg"
+  },
+  {
+    name: "Chạy Về Khóc Với Anh",
+    artist: "Erik",
+    file: "music/song2.mp3",
+    image: "music/thumb2.jpg"
+  }
 ];
 
 let currentTrackIndex = 0;
-
 const playlistEl = document.getElementById("playlist");
 const audioPlayer = document.getElementById("audio-player");
-const searchInput = document.getElementById("search");
-const toggleBtn = document.getElementById("toggle-playlist");
 
-// Tạo danh sách bài hát
+const trackImg = document.getElementById("track-img");
+const trackTitle = document.getElementById("track-title");
+const trackArtist = document.getElementById("track-artist");
+
+const playBtn = document.getElementById("play-btn");
+const prevBtn = document.getElementById("prev-btn");
+const nextBtn = document.getElementById("next-btn");
+const progressBar = document.getElementById("progress-bar");
+const searchInput = document.getElementById("search");
+
 function renderPlaylist(filter = "") {
   playlistEl.innerHTML = "";
   tracks
-    .filter(track => track.name.toLowerCase().includes(filter.toLowerCase()))
+    .filter(t => t.name.toLowerCase().includes(filter.toLowerCase()))
     .forEach((track, index) => {
       const li = document.createElement("li");
-      li.textContent = track.name;
-      li.onclick = () => playTrack(index);
+      li.innerHTML = `
+        <img src="${track.image}" alt="${track.name}" />
+        <div class="text">
+          <div><strong>${track.name}</strong></div>
+          <div style="font-size: 12px;">${track.artist}</div>
+        </div>
+      `;
+      li.addEventListener("click", () => playTrack(index));
       playlistEl.appendChild(li);
     });
 }
 
 function playTrack(index) {
   currentTrackIndex = index;
-  audioPlayer.src = tracks[index].file;
+  const track = tracks[index];
+  audioPlayer.src = track.file;
+  trackImg.src = track.image;
+  trackTitle.textContent = track.name;
+  trackArtist.textContent = track.artist;
   audioPlayer.play();
+  playBtn.textContent = "⏸";
+  document.body.classList.add("playing");
 }
 
-// Tự động chuyển bài khi hết
-audioPlayer.addEventListener("ended", () => {
+playBtn.addEventListener("click", () => {
+  if (audioPlayer.paused) {
+    audioPlayer.play();
+    playBtn.textContent = "⏸";
+    document.body.classList.add("playing");
+  } else {
+    audioPlayer.pause();
+    playBtn.textContent = "▶️";
+    document.body.classList.remove("playing");
+  }
+});
+
+prevBtn.addEventListener("click", () => {
+  currentTrackIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length;
+  playTrack(currentTrackIndex);
+});
+
+nextBtn.addEventListener("click", () => {
   currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
   playTrack(currentTrackIndex);
 });
 
-// Tìm kiếm bài hát
+audioPlayer.addEventListener("timeupdate", () => {
+  progressBar.value = (audioPlayer.currentTime / audioPlayer.duration) * 100 || 0;
+});
+
+progressBar.addEventListener("input", () => {
+  audioPlayer.currentTime = (progressBar.value / 100) * audioPlayer.duration;
+});
+
+audioPlayer.addEventListener("ended", () => {
+  nextBtn.click();
+});
+
 searchInput.addEventListener("input", (e) => {
   renderPlaylist(e.target.value);
 });
 
-// Toggle danh sách phát
-toggleBtn.addEventListener("click", () => {
-  playlistEl.classList.toggle("hidden");
-  toggleBtn.textContent = playlistEl.classList.contains("hidden") ? "📂" : "🎵";
-});
-
-// Gọi lúc đầu
 renderPlaylist();
