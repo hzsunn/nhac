@@ -6,7 +6,7 @@ body {
   padding-bottom: 100px;
 
   /* Ảnh nền */
-  background-image: url('1080x1920.PNG'); /* ← ảnh nền đặt trong thư mục images/ */
+  background-image: url('bgr.JPG'); /* ← ảnh nền đặt trong thư mục images/ */
   background-size: cover;       /* Tự co giãn đầy màn hình */
   background-position: center;  /* Căn giữa */
   background-repeat: no-repeat; /* Không lặp */
