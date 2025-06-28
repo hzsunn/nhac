@@ -81,7 +81,7 @@ function renderPlaylist(filter = "") {
   });
 }
 
-}
+
 
 function playTrack(index) {
   currentTrackIndex = index;
@@ -123,9 +123,7 @@ nextBtn.addEventListener("click", () => {
   playTrack(currentTrackIndex);
 });
 
-audioPlayer.addEventListener("timeupdate", () => {
-  progressBar.value = (audioPlayer.currentTime / audioPlayer.duration) * 100 || 0;
-});
+
 
 progressBar.addEventListener("input", () => {
   audioPlayer.currentTime = (progressBar.value / 100) * audioPlayer.duration;
