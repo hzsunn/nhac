@@ -2,7 +2,7 @@ const commonThumbnail = "music/IMG_0947.jpeg";
 
 const tracks = [
   { name: "Em Ơi Em Đừng Khóc", file: "music/Emoiem.m4a" },
-  { name: "Chạy Về Khóc Với Anh", file: "music/song2.mp3" }
+  { name: "Chạy Về Khóc Với Anh", file: "music/song2.mp3" },
 ];
 
 let currentTrackIndex = 0;
