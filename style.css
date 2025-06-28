@@ -68,6 +68,7 @@ body {
   padding: 10px 20px;
   z-index: 999;
   font-size: 14px;
+  flex-wrap: wrap;
 }
 
 .zing-player .left {
@@ -128,6 +129,39 @@ body {
 
 #progress-bar {
   width: 150px;
+}
+
+/* Sóng nhạc */
+.waveform {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.waveform div {
+  width: 3px;
+  height: 100%;
+  margin: 0 1px;
+  background: #ff6ec4;
+  border-radius: 2px;
+  animation: wave 1s ease-in-out infinite;
+  animation-play-state: paused;
+}
+
+.waveform div:nth-child(1) { animation-delay: 0s; }
+.waveform div:nth-child(2) { animation-delay: 0.2s; }
+.waveform div:nth-child(3) { animation-delay: 0.4s; }
+.waveform div:nth-child(4) { animation-delay: 0.6s; }
+.waveform div:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes wave {
+  0%, 100% { transform: scaleY(0.4); }
+  50% { transform: scaleY(1); }
+}
+
+.waveform.playing div {
+  animation-play-state: running;
 }
 
 /* Responsive cho điện thoại */
