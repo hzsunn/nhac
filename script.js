@@ -9,6 +9,11 @@ const tracks = [
   { name: "Tìm Về", file: "music/Timve.m4a" },
   { name: "Ngủ Ngon Nhé Vợ Tương Lai", file: "music/Nnn.m4a" },
   { name: "Nơi Này Có Anh", file: "music/Noinaycoanh.m4a" },
+  { name: "Ánh Nắng Của Anh", file: "music/Anca.m4a" },
+  { name: "Đúng Cũng Thành Sai", file: "music/Dcts.m4a" },
+  { name: "Điều Ước Giản Đơn", file: "music/Dugd.m4a" },
+  { name: "Hẹn Ước Từ Hư Vô", file: "music/Henuoc.m4a" },
+  { name: "Đơn Giản Anh Yêu Em", file: "music/Dgaye.m4a" },
 
 ];
 
