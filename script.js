@@ -30,7 +30,7 @@ const tracks = [
   { name: "Suy Nghĩ Trong Anh", file: "music/Snta.m4a" },
   { name: "Xa Muôn Trùng Mây", file: "music/Xamuontrungmay.m4a" },
   { name: "Sau Tất Cả", file: "music/Sautatca.m4a" },
-  { name: "Từ Nay Em Là Vợ Anh", file: "music/TNELVA.m4a" },
+  { name: "Từ Nay Em Là Vợ Anh", file: "music/Tnelva.m4a" },
   { name: "Sau Này Em Cưới Ai Rồi", file: "music/Snecar.m4a" },
   { name: "Khoảng Cách Đôi Ta", file: "music/Kcdt.m4a" },
   { name: "Anh Sẽ Là Người Ra Đi", file: "music/Aslnrd.m4a" },
@@ -100,7 +100,8 @@ const tracks = [
   { name: "Vô Cùng", file: "music/Vocung.m4a" },
   { name: "Xa Kỉ Niệm", file: "music/Xakiniem.m4a" },
   { name: "Xin Đừng Lặng Im", file: "music/Xindu nglangim.m4a" },
-
+  { name: "Yêu 5", file: "music/Yeu5.m4a" },
+  { name: "Tòng Phu", file: "music/Tongphu.m4a" },
 
 ];
 
