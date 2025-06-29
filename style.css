@@ -53,22 +53,22 @@ body::before {
 }
 
 #search {
-  display: block;
+  width: 100%; /* ← chiếm toàn bộ khung wrapper */
   font-size: 16px; 
-  padding: 12px 45px 12px 20px;
-  width: 80%;
-  max-width: 400px;
+  padding: 10px 45px 10px 20px; /* ← chừa khoảng cho nút search bên phải */
   border-radius: 20px;
   border: none;
-  margin: 0 auto;
   background-color: pink;
   color: white;
   text-align: center;
+  box-sizing: border-box; /* ← đảm bảo không bị vượt quá khung */
 }
+
 #search:focus {
   outline: none;
   box-shadow: 0 0 6px white;
 }
+
 #search-btn {
   position: absolute;
   right: 10px;
