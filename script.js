@@ -52,6 +52,24 @@ const tracks = [
   { name: "Yêu Cô Bạn Thân", file: "music/Ycbt.m4a" },
   { name: "Yêu Em Rất Nhiều", file: "music/Yern.m4a" },
   { name: "Vạn Sự Tuỳ Duyên", file: "music/Vansutuyduyen.m4a" },
+   { name: "Một Bước Yêu Vạn Dặm Đau", file: "music/1byvdd.m4a" },
+  { name: "3107", file: "music/3107.m4a" },
+  { name: "3107-2", file: "music/3107-2.m4a" },
+  { name: "3107-3", file: "music/31073.m4a" },
+  { name: "Anh Chẳng Sao Mà", file: "music/Anhchangsaoma.m4a" },
+  { name: "Anh Thôi Nhân Nhượng", file: "music/Anhthoinn.m4a" },
+  { name: "Anh Sẽ Yêu Người Khác Hơn Em", file: "music/Asynghe.m4a" },
+  { name: "Bán Duyên", file: "music/Banduyen.m4a" },
+  { name: "Cảm Ơn Vì Tất Cả", file: "music/Camonvitatca.m4a" },
+  { name: "Sợ Phải Kết Thúc", file: "music/Sophaiketthuc.m4a" },
+  { name: "Cánh Đồng Yêu Thương", file: "music/Canhsongyeuthuong.m4a" },
+  { name: "Chẳng Gì Đẹp Đẽ Trên Đời Mãi", file: "music/Changgidepde.m4a" },
+  { name: "Cho Anh Say", file: "music/Choanhsay.m4a" },
+  { name: "Chưa Bao Giờ", file: "music/Chuabaogio.m4a" },
+  { name: "Cho Anh Gần Em Thêm Chút Nữa", file: "music/CAge.m4a" },
+  { name: "Con Đường Hạnh Phúc", file: "music/Conduonghp.m4a" },
+  { name: "Cuộc Sống Em Ổn Không", file: "music/Cseok.m4a" },
+
 ];
 
 let currentTrackIndex = 0;
