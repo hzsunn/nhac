@@ -55,7 +55,7 @@ body::before {
 #search {
   display: block;
   font-size: 16px; 
-  padding: 10px;
+  padding: 12px 45px 12px 20px;
   width: 80%;
   max-width: 400px;
   border-radius: 20px;
