@@ -51,6 +51,7 @@ const tracks = [
   { name: "Vợ Tuyệt Vời Nhất", file: "music/Vtvn.m4a" },
   { name: "Yêu Cô Bạn Thân", file: "music/Ycbt.m4a" },
   { name: "Yêu Em Rất Nhiều", file: "music/Yern.m4a" },
+  { name: "Vạn Sự Tuỳ Duyên", file: "music/Vansutuyduyen.m4a" },
 ];
 
 let currentTrackIndex = 0;
