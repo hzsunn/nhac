@@ -69,6 +69,23 @@ const tracks = [
   { name: "Cho Anh Gần Em Thêm Chút Nữa", file: "music/CAge.m4a" },
   { name: "Con Đường Hạnh Phúc", file: "music/Conduonghp.m4a" },
   { name: "Cuộc Sống Em Ổn Không", file: "music/Cseok.m4a" },
+{ name: "Đau Để Trưởng Thành", file: "music/Daudetruongthanh.m4a" },
+  { name: "Dệt Mộng Uyên Ương", file: "music/Dmyu.m4a" },
+  { name: "Đừng Quên Tên Anh", file: "music/Dqta.m4a" },
+  { name: "Duyên Mình Lỡ", file: "music/Duyenminhlo.m4a" },
+  { name: "Em Luôn Ở Trong Tâm Trí Anh", file: "music/Emluonottta.m4a" },
+  { name: "Ép Duyên", file: "music/epduyen.m4a" },
+  { name: "Giây Phút Êm Đềm", file: "music/Giayphutemdem.m4a" },
+  { name: "Gương Mặt Lạ Lẫm", file: "music/Gmll.m4a" },
+  { name: "Hẹn Yêu", file: "music/Henyeu.m4a" },
+  { name: "Hết Thương Cạn Nhớ", file: "music/Hetthuongcannho.m4a" },
+  { name: "Hôm Nay Em Cưới Rồi", file: "music/Hnecr.m4a" },
+  { name: "Không Phải Anh Đúng Không", file: "music/Kpadk.m4a" },
+  { name: "Lắng Nghe Nước Mắt", file: "music/Langnghencmat.m4a" },
+  { name: "Mình Từng Yêu Nhau", file: "music/Minhtungyeunhau.m4a" },
+  { name: "Mãi Mãi Không Phải Anh", file: "music/Mmkpa.m4a" },
+  { name: "Mở Lối Cho Em", file: "music/Moloichoem.m4a" },
+  { name: "Món Quà Vô Giá", file: "music/Mqvg.m4a" },
 
 ];
 
