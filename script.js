@@ -50,6 +50,7 @@ const tracks = [
   { name: "Vết Thương Trong Tim", file: "music/Vetthuongtrongtim.m4a" },
   { name: "Vợ Tuyệt Vời Nhất", file: "music/Vtvn.m4a" },
   { name: "Yêu Cô Bạn Thân", file: "music/Ycbt.m4a" },
+  { name: "Yêu Em Rất Nhiều", file: "music/Yern.m4a" },
 ];
 
 let currentTrackIndex = 0;
