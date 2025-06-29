@@ -86,6 +86,21 @@ const tracks = [
   { name: "Mãi Mãi Không Phải Anh", file: "music/Mmkpa.m4a" },
   { name: "Mở Lối Cho Em", file: "music/Moloichoem.m4a" },
   { name: "Món Quà Vô Giá", file: "music/Mqvg.m4a" },
+  { name: "Như Anh Đã Thấy Em", file: "music/NADTE.m4a" },
+  { name: "Nên Chờ Hay Nên Quên", file: "music/Nenchohaynenquen.m4a" },
+  { name: "Người Đến Sau", file: "music/Nguoidensau.m4a" },
+  { name: "Nơi Tình Yêu Kết Thúc", file: "music/Ntykt.m4a" },
+  { name: "Thế Giới Ảo Tình Yêu Thật", file: "music/Online.m4a" },
+  { name: "Tâm Giao", file: "music/Tamgiao.m4a" },
+  { name: "Thất Tình", file: "music/Thattinh.m4a" },
+  { name: "Thương Thì Thôi", file: "music/Thuongthithoi.m4a" },
+  { name: "Tiếng Pháo Tiễn Người", file: "music/Tiengphaotiennguoi.m4a" },
+  { name: "Tệ Thật! Anh Nhớ Em", file: "music/Ttane.m4a" },
+  { name: "Từng Yêu", file: "music/Tungyeu.m4a" },
+  { name: "Vô Cùng", file: "music/Vocung.m4a" },
+  { name: "Xa Kỉ Niệm", file: "music/Xakiniem.m4a" },
+  { name: "Xin Đừng Lặng Im", file: "music/Xindu nglangim.m4a" },
+
 
 ];
 
