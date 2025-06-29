@@ -208,7 +208,12 @@ audioPlayer.addEventListener("timeupdate", () => {
 });
 
 audioPlayer.addEventListener("ended", () => {
-  nextBtn.click();
+  let nextIndex;
+  do {
+    nextIndex = Math.floor(Math.random() * tracks.length);
+  } while (nextIndex === currentTrackIndex); // tránh trùng bài đang phát
+
+  playTrack(nextIndex);
 });
 
 searchInput.addEventListener("input", (e) => {
