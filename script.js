@@ -214,5 +214,15 @@ audioPlayer.addEventListener("ended", () => {
 searchInput.addEventListener("input", (e) => {
   renderPlaylist(e.target.value);
 });
+document.getElementById("search-btn").addEventListener("click", () => {
+  const searchValue = searchInput.value.trim();
+  renderPlaylist(searchValue);
+  searchInput.blur(); // ← lệnh quan trọng: tắt bàn phím
+});
+document.addEventListener("touchstart", (e) => {
+  if (e.target.id !== "search") {
+    searchInput.blur(); // bỏ focus nếu bấm ra ngoài
+  }
+});
 
 renderPlaylist();
