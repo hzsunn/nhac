@@ -49,7 +49,7 @@ body::before {
   position: relative;
   width: 90%;
   max-width: 400px;
-  margin: 0 auto 20px;
+  margin: 0 auto 8px;
 }
 
 #search {
