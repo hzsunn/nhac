@@ -116,20 +116,20 @@ body::before {
   bottom: 0;
   left: 0;
   right: 0;
-  color: white;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  z-index: 999;
-  font-size: 14px;
   flex-wrap: wrap;
+  padding: 15px 20px;
+  font-size: 14px;
 
-  background: rgba(0, 0, 0, 0.3); /* 👈 nền trong suốt */
-  backdrop-filter: blur(12px);    /* 👈 hiệu ứng mờ */
-  -webkit-backdrop-filter: blur(12px); /* 👈 Safari */
+  background: rgba(255, 255, 255, 0.1);         /* lớp nền bán trong suốt */
+  backdrop-filter: blur(10px);                 /* hiệu ứng mờ */
+  -webkit-backdrop-filter: blur(10px);         /* Safari support */
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px 20px 0 0;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);   /* đổ bóng nhẹ */
 }
 
 .zing-player .left {
