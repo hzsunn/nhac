@@ -102,6 +102,7 @@ const tracks = [
   { name: "Xin Đừng Lặng Im", file: "music/Xindunglangim.m4a" },
   { name: "Yêu 5", file: "music/Yeu5.m4a" },
   { name: "Tòng Phu", file: "music/Tongphu.m4a" },
+  { name: "Có Em Trong Đời", file: "music/Coemtrongdoi.m4a" }
 
 ];
 
