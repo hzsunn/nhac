@@ -133,7 +133,7 @@ body::before {
   font-size: 14px;
 
   /* Nền ảnh 🎵 */
-  background-image: url('music/player-bg.png');
+  background-image: url('music/player-bg.PNG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
