@@ -253,19 +253,7 @@ body::before {
 
 /* Responsive cho điện thoại */
 
- .zing-player {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 20px;
-  margin-top: 20px;
-  color: white;
-}
-
+ 
 .left {
   display: flex;
   align-items: center;
