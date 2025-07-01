@@ -153,18 +153,6 @@ function renderPlaylist(filter = "") {
   });
 }
 
-function addTrackToEnd(name, file) {
-  tracks.push({ name, file });
-  renderPlaylist();          // Cập nhật lại danh sách nhạc
-  logHistory(name);          // Ghi lại lịch sử bài vừa thêm
-}
-
-function logHistory(songName) {
-  const log = document.getElementById("history-log");
-  const time = new Date().toLocaleTimeString('vi-VN');
-  log.innerHTML = `Bài hát mới nhất: <b>${songName}</b>`;
-}
-
 function playTrack(index) {
   currentTrackIndex = index;
   const track = tracks[index];
