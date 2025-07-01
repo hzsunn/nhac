@@ -87,7 +87,7 @@ body::before {
   padding: 0 20px;
   list-style: none;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: 60vh;
 }
 
 .playlist li {
