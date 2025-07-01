@@ -87,7 +87,6 @@ body::before {
   padding: 0 20px;
   list-style: none;
   margin: 0;
-  margin-top: 8px;
   max-height: calc(100vh - 240px);
 }
 
@@ -117,23 +116,15 @@ body::before {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  background: #1a1a2e;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 15px 20px;
+  padding: 10px 20px;
+  z-index: 999;
   font-size: 14px;
-
-  /* Nền bán trong suốt + hiệu ứng mờ */
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px 20px 0 0;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
-  color: white;
+  flex-wrap: wrap;
 }
 
 .zing-player .left {
@@ -240,17 +231,71 @@ body::before {
 }
 
 /* Responsive cho điện thoại */
-@media (max-width: 480px) {
+
+ .zing-player {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.lyrics-box {
+  flex: 1;
+  max-height: 100px;
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.karaoke-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.karaoke-line {
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.karaoke-line.active {
+  color: hotpink;
+  font-weight: bold;
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
   .zing-player {
     flex-direction: column;
-    align-items: flex-start;
-    font-size: 13px;
-    padding: 10px;
+    align-items: stretch;
   }
-
-  .zing-player .left {
-    margin-bottom: 10px;
+  .lyrics-box {
+    border-left: none;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    max-height: 150px;
   }
+}
 
   .zing-player img {
     width: 40px;
@@ -265,4 +310,3 @@ body::before {
     justify-content: space-between;
     width: 100%;
   }
-}
