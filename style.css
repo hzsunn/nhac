@@ -124,15 +124,28 @@ body::before {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #1a1a2e;
-  color: #fff;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  z-index: 999;
-  font-size: 14px;
   flex-wrap: wrap;
+  padding: 15px 20px;
+  font-size: 14px;
+
+  /* Nền ảnh 🎵 */
+  background-image: url('music/player-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Hiệu ứng mờ thêm */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  color: white;
 }
 
 .zing-player .left {
