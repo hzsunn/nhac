@@ -126,8 +126,8 @@ body::before {
 
   /* Nền bán trong suốt + hiệu ứng mờ */
   background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px 20px 0 0;
