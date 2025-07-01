@@ -162,7 +162,7 @@ function addTrackToEnd(name, file) {
 function logHistory(songName) {
   const log = document.getElementById("history-log");
   const time = new Date().toLocaleTimeString('vi-VN');
-  log.innerHTML = `Bài hát mới nhất: <b>${songName}</b> lúc ${time}`;
+  log.innerHTML = `Bài hát mới nhất: <b>${songName}</b>`;
 }
 
 function playTrack(index) {
