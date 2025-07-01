@@ -124,12 +124,15 @@ body::before {
   padding: 15px 20px;
   font-size: 14px;
 
-  background: rgba(255, 255, 255, 0.2);         /* lớp nền bán trong suốt */
-  backdrop-filter: blur(12px);                 /* hiệu ứng mờ */
-  -webkit-backdrop-filter: blur(12px);         /* Safari support */
+  /* Nền bán trong suốt + hiệu ứng mờ */
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px 20px 0 0;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);   /* đổ bóng nhẹ */
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  color: white;
 }
 
 .zing-player .left {
