@@ -119,33 +119,33 @@ body::before {
   text-align: left;
 }
 
+.zing-player::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* 👈 điều chỉnh độ tối tại đây */
+  border-radius: 20px 20px 0 0;
+  z-index: 0;
+}
+
 .zing-player {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   padding: 15px 20px;
-  font-size: 14px;
-
-  /* Nền ảnh 🎵 */
-  background-image: url('music/player-bg.PNG');
+  background-image: url('music/player-bg.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-
-  /* Hiệu ứng mờ thêm */
+  color: white;
+  z-index: 10; /* phải cao hơn ::before */
   backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px 20px 0 0;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
-  color: white;
+  overflow: hidden;
 }
 
 .zing-player .left {
