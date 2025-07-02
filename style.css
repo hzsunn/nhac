@@ -187,13 +187,13 @@ body::before {
 }
 
 #track-artist {
-  font-size: 16px;
+  font-size: 15px;
   font-style: italic;
-  color: hotpink; /* hồng nhạt */
-  font-family: 'Great Vibes', cursive; /* font đẹp */
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  color: #ff8ac9; /* Hồng pastel dễ nhìn hơn */
+  font-family: 'Great Vibes', cursive;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.5px;
 }
-
 .controls {
   display: flex;
   align-items: center;
