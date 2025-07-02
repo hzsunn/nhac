@@ -187,8 +187,11 @@ body::before {
 }
 
 #track-artist {
-  font-size: 12px;
-  color: #aaa;
+  font-size: 13px;
+  font-style: italic;
+  color: #ffb6c1; /* hồng nhạt */
+  font-family: 'Great Vibes', cursive; /* font đẹp */
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
 
 .controls {
