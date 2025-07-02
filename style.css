@@ -141,7 +141,7 @@ body::before {
   background-size: cover;
   background-position: center;
   color: white;
-  z-index: 10; /* phải cao hơn ::before */
+  z-index: 9999; /* phải cao hơn ::before */
   backdrop-filter: blur(6px);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px 20px 0 0;
