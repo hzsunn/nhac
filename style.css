@@ -187,9 +187,9 @@ body::before {
 }
 
 #track-artist {
-  font-size: 13px;
+  font-size: 16px;
   font-style: italic;
-  color: #ffb6c1; /* hồng nhạt */
+  color: hotpink; /* hồng nhạt */
   font-family: 'Great Vibes', cursive; /* font đẹp */
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
