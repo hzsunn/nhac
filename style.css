@@ -122,6 +122,7 @@ body::before {
 .zing-player::before {
   content: "";
   position: absolute;
+  pointer-events: none;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0, 0, 0, 0.4); /* 👈 điều chỉnh độ tối tại đây */
   border-radius: 20px 20px 0 0;
