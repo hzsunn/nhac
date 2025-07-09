@@ -25,7 +25,7 @@ const tracks = [
   { name: "Bản Tình Ca Đầu Tiên", file: "music/Btcdt.m4a" },
   { name: "Đếm Ngày Xa Em", file: "music/Demngayxaem.m4a" },
   { name: "Chỉ Là Muốn Nói", file: "music/Chila.m4a" },
-  { name: "Anh Chẳng Sao Đâu", file: "music/Acsd.m4a" },
+  { name: "Anh Không Sao Đâu", file: "music/Acsd.m4a" },
   { name: "Hai Chữ Đã Từng", file: "music/2cdt.m4a" },
   { name: "Dòng Thời Gian", file: "music/Dtg.m4a" },
     { name: "Ừ Có Anh Đây", file: "music/Ucoanhday.m4a" },
