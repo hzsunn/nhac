@@ -3,6 +3,8 @@ const commonThumbnail = "music/IMG_0947.jpeg";
 const tracks = [
   { name: "Em Ơi Em Đừng Khóc", file: "music/Emoiem.m4a" },
   { name: "Nếu Em Còn Tồn Tại", file: "music/Nectt.m4a" },
+   { name: "Sao Mình Chưa Nắm Tay Nhau", file: "music/Smcntn.m4a" },
+  { name: "Nói Có Sẽ Khó Nhưng Vui", file: "music/Ncsknv.m4a" },
   { name: "Nụ Hồng Mong Manh - Phai Dấu Cuộc Tình", file: "music/Mashup.m4a" },
   { name: "Anh Không Hiểu", file: "music/Anhkhieu.m4a" },
   { name: "Bèo Dạt Mây Trôi", file: "music/Bdmt.m4a" },
