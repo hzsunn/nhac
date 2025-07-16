@@ -4,6 +4,7 @@ const tracks = [
   { name: "Em Ơi Em Đừng Khóc", file: "music/Emoiem.m4a" },
   { name: "Thương 1 Người Mà Mất Cả Tương Lai", file: "music/T1n.m4a" },
   { name: "Phim Ba Người", file: "music/Phim3n.m4a" },
+  { name: "Xa Vắng", file: "music/Xavang.m4a" },
    { name: "Hãy Ra Khỏi Người Đó Đi", file: "music/Hrkndd.m4a" },
   { name: "Đến Giờ Cơm", file: "music/Dengiocom.m4a" },
   { name: "2AM", file: "music/2am.m4a" },
