@@ -2,6 +2,7 @@ const commonThumbnail = "music/IMG_0947.jpeg";
 
 const tracks = [
   { name: "Em Ơi Em Đừng Khóc", file: "music/Emoiem.m4a" },
+  { name: "Ngày Em Đẹp Nhất", file: "music/Ngayemdepnhat.m4a" },
   { name: "Thương 1 Người Mà Mất Cả Tương Lai", file: "music/T1n.m4a" },
   { name: "Phim Ba Người", file: "music/Phim3n.m4a" },
   { name: "Xa Vắng", file: "music/Xavang.m4a" },
