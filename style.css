@@ -32,6 +32,14 @@ body::before {
   display: inline-block;
 }
 
+.visit-counter {
+  font-family: inherit;   /* Dùng cùng font */
+  color: inherit;         /* Dùng cùng màu */
+  text-align: center;     /* Căn giữa như chữ Trung */
+  margin-top: 5px;        /* Khoảng cách nhỏ */
+  font-size: 18px;        /* Giữ cùng size (bạn chỉnh nếu cần) */
+  font-style: italic;     /* Nếu chữ Trung có nghiêng thì thêm */
+}
 .app-container {
   flex: 1;
   display: flex;
