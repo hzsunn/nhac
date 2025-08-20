@@ -32,6 +32,51 @@
    <p class="latest-track">爱你，宝贝 🤍</p>
     <ul id="playlist" class="playlist"></ul>
   </div>
+  <h2>Số lượt truy cập trang này:</h2>
+  <p id="counter">Đang tải...</p>
+
+  <script type="module">
+    // Import Firebase SDK
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getDatabase, ref, get, set } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
+
+    // 🔑 Config của bạn (thay vào đây)
+    const firebaseConfig = {
+      apiKey: "AIzaSyCp0cZQHy8BAEhB9GqYNKw1LjY6xd5tBjU",
+  authDomain: "count-ab93f.firebaseapp.com",
+  databaseURL: "https://count-ab93f-default-rtdb.firebaseio.com",
+  projectId: "count-ab93f",
+  storageBucket: "count-ab93f.firebasestorage.app",
+  messagingSenderId: "186212159540",
+  appId: "1:186212159540:web:928231a1dc222a56dafa61",
+  measurementId: "G-HVYHDR5CQE"
+};
+
+    // Khởi tạo Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    // Hàm tăng bộ đếm
+    async function updateCounter() {
+      const counterRef = ref(db, "visitCount");
+
+      // Lấy dữ liệu hiện tại
+      const snapshot = await get(counterRef);
+      let count = snapshot.exists() ? snapshot.val() : 0;
+
+      // Tăng lên 1
+      count++;
+
+      // Lưu lại vào database
+      await set(counterRef, count);
+
+      // Hiển thị ra màn hình
+      document.getElementById("counter").textContent = count;
+    }
+
+    // Gọi hàm khi load trang
+    updateCounter();
+  </script>
 
   <!-- Trình phát cố định dưới -->
   <div class="zing-player">
