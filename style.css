@@ -71,7 +71,7 @@ body::before {
   text-align: center;
   font-size: 14px;
   color: pink;
-  margin-bottom: 4px;
+  margin: 4px 0;
 }
 
 .search-wrapper {
