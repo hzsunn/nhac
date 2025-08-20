@@ -32,14 +32,7 @@ body::before {
   display: inline-block;
 }
 
-.visit-counter {
-  font-family: inherit;   /* Dùng cùng font */
-  color: inherit;         /* Dùng cùng màu */
-  text-align: center;     /* Căn giữa như chữ Trung */
-  margin-top: 5px;        /* Khoảng cách nhỏ */
-  font-size: 18px;        /* Giữ cùng size (bạn chỉnh nếu cần) */
-  font-style: italic;     /* Nếu chữ Trung có nghiêng thì thêm */
-}
+
 .app-container {
   flex: 1;
   display: flex;
@@ -58,7 +51,7 @@ body::before {
   text-align: center;
   font-size: 14px;
   color: pink;
-  margin: 4px 0;
+  margin-bottom: 4px;
 }
 
 .search-wrapper {
@@ -102,7 +95,7 @@ body::before {
   overflow-y: auto; /* 👈 cho phép cuộn */
   padding: 0 20px;
   list-style: none;
-  margin: 0;
+  margin-top: 5px;
   max-height: 60vh;
 }
 
