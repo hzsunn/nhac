@@ -8,6 +8,26 @@ body {
   display: flex;
   flex-direction: column;
 
+  /* Cấu hình mặc định cho điện thoại (dọc) */
+img.responsive {
+  width: 100%;   /* hoặc kích thước bạn muốn */
+  height: auto;
+  max-width: 300px; /* giới hạn tối đa nếu cần */
+}
+
+/* Khi thiết bị quay ngang (landscape) */
+@media only screen and (orientation: landscape) {
+  img.responsive {
+    width: 60%;   /* thu nhỏ hơn khi ngang */
+    max-width: 200px;
+  }
+  
+  body {
+    /* Giữ bố cục dọc, tránh flex hay grid bị thay đổi */
+    flex-direction: column;
+  }
+}
+
   /* Ảnh nền */
   background-image: url('bgr.JPG'); /* ← ảnh nền đặt trong thư mục images/ */
   background-size: cover;       /* Tự co giãn đầy màn hình */
@@ -272,32 +292,6 @@ body::before {
   flex-direction: column;
 }
 
-.lyrics-box {
-  flex: 1;
-  max-height: 100px;
-  overflow-y: auto;
-  font-size: 14px;
-  line-height: 1.4;
-  padding: 10px;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.karaoke-lines {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.karaoke-line {
-  opacity: 0.5;
-  transition: 0.2s;
-}
-
-.karaoke-line.active {
-  color: hotpink;
-  font-weight: bold;
-  opacity: 1;
-}
 
 @media (max-width: 600px) {
   .zing-player {
