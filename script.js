@@ -1,5 +1,13 @@
 const commonThumbnail = "music/IMG_0947.jpeg";
-
+ const firebaseConfig = {
+    apiKey: "AIzaSyCp0cZQHy8BAEhB9GqYNKw1LjY6xd5tBjU",
+    authDomain: "count-ab93f.firebaseapp.com",
+    projectId: "count-ab93f",
+    storageBucket: "count-ab93f.firebasestorage.app",
+    messagingSenderId: "186212159540",
+    appId: "1:186212159540:web:928231a1dc222a56dafa61",
+    measurementId: "G-HVYHDR5CQE"
+  };
 const tracks = [
   { name: "Em Ơi Em Đừng Khóc", file: "music/Emoiem.m4a" },
   { name: "Dạ Vũ", file: "music/Davu.m4a" },
