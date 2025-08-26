@@ -8,24 +8,6 @@ body {
   display: flex;
   flex-direction: column;
 
-  /* Cấu hình mặc định cho điện thoại (dọc) */
-img.responsive {
-  width: 100%;   /* hoặc kích thước bạn muốn */
-  height: auto;
-  max-width: 300px; /* giới hạn tối đa nếu cần */
-}
-
-/* Khi thiết bị quay ngang (landscape) */
-@media only screen and (orientation: landscape) {
-  img.responsive {
-    width: 60%;   /* thu nhỏ hơn khi ngang */
-    max-width: 200px;
-  }
-  
-  body {
-    /* Giữ bố cục dọc, tránh flex hay grid bị thay đổi */
-    flex-direction: column;
-  }
 }
 
   /* Ảnh nền */
