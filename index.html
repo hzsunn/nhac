@@ -88,41 +88,43 @@
     
   
   
+<!-- Trình phát cố định dưới -->
+<div class="zing-player">
+  <!-- Bên trái: ảnh + info + sóng -->
+  <div class="left">
+    <img id="track-img" src="bgr.JPG" />
+    <div class="waveform" id="wave">
+      <div></div><div></div><div></div><div></div><div></div>
+    </div>
+    <div class="info">
+      <div id="track-title">Chưa chọn bài</div>
+      <div id="track-artist">Không rõ nghệ sĩ</div>
+    </div>
+  </div> <!-- ✅ Đóng .left -->
 
-  <!-- Trình phát cố định dưới -->
-  <div class="zing-player">
-    <div class="left">
-      <img id="track-img" src="bgr.JPG" />
-      <div class="waveform" id="wave">
-        <div></div><div></div><div></div><div></div><div></div>
-      </div>
-      <div class="info">
-        <div id="track-title">Chưa chọn bài</div>
-        <div id="track-artist">Không rõ nghệ sĩ</div>
-      </div>
-   
-    <div class="controls">
-  <button id="prev-btn" class="btn">
-    <i class="fa-solid fa-backward-step"></i>
-  </button>
+  <!-- Bên phải: controls -->
+  <div class="controls">
+    <button id="prev-btn" class="btn">
+      <i class="fa-solid fa-backward-step"></i>
+    </button>
 
-  <button id="play-btn" class="btn">
-    <i id="play-icon" class="fa-solid fa-play"></i>
-  </button>
+    <button id="play-btn" class="btn">
+      <i id="play-icon" class="fa-solid fa-play"></i>
+    </button>
 
-  <button id="next-btn" class="btn">
-    <i class="fa-solid fa-forward-step"></i>
-  </button>
-<div class="time-display">
-    <span id="current-time">0:00</span> / <span id="duration">0:00</span>
-  </div>
+    <button id="next-btn" class="btn">
+      <i class="fa-solid fa-forward-step"></i>
+    </button>
 
+    <div class="time-display">
+      <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+    </div>
 
-  <input type="range" id="progress-bar" value="0" />
+    <input type="range" id="progress-bar" value="0" />
+  </div> <!-- ✅ Đóng .controls -->
+</div> <!-- ✅ Đóng .zing-player -->
 
-  </div>
-
-  <audio id="audio-player"></audio>
-  <script src="script.js"></script>
+<audio id="audio-player"></audio>
+<script src="script.js"></script>
 </body>
 </html>
