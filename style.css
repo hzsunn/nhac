@@ -156,7 +156,7 @@ body::before {
   left: 0;
   right: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 15px 20px;
   background-image: url('sun.JPG');
