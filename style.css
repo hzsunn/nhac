@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
 
-}
+
 
   /* Ảnh nền */
   background-image: url('bgr.JPG'); /* ← ảnh nền đặt trong thư mục images/ */
