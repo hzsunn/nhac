@@ -22,10 +22,7 @@ img.responsive {
     max-width: 200px;
   }
   
-  body {
-    /* Giữ bố cục dọc, tránh flex hay grid bị thay đổi */
-    flex-direction: column;
-  }
+ 
 }
 
 
