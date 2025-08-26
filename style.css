@@ -7,25 +7,6 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-}
-  
- /* Cấu hình mặc định cho điện thoại (dọc) */
-img.responsive {
-  width: 100%;   /* hoặc kích thước bạn muốn */
-  height: auto;
-  max-width: 300px; /* giới hạn tối đa nếu cần */
-}
-
-/* Khi thiết bị quay ngang (landscape) */
-@media only screen and (orientation: landscape) {
-  img.responsive {
-    width: 60%;   /* thu nhỏ hơn khi ngang */
-    max-width: 200px;
-  }
-  
- 
-}
-
 
   /* Ảnh nền */
   background-image: url('bgr.JPG'); /* ← ảnh nền đặt trong thư mục images/ */
@@ -33,6 +14,7 @@ img.responsive {
   background-position: center;  /* Căn giữa */
   background-repeat: no-repeat; /* Không lặp */
   background-attachment: fixed; /* Ảnh nền cố định khi cuộn */
+
 }
 body::before {
   content: '';
