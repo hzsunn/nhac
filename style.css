@@ -103,6 +103,7 @@ body::before {
 
 .playlist li {
   display: flex;
+  color: pink;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
   margin-bottom: 10px;
@@ -223,6 +224,7 @@ body::before {
 
 #progress-bar {
   width: 150px;
+  background: hotpink;
 }
 
 /* Sóng nhạc */
