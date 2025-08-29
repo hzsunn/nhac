@@ -1,4 +1,4 @@
-const commonThumbnail = "huyen.JPG";
+const commonThumbnail = "favicon.ico";
  
 const tracks = [
   { name: "Em Ơi Em Đừng Khóc", file: "music/Emoiem.m4a" },
