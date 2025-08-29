@@ -239,14 +239,24 @@ nextBtn.addEventListener("click", () => {
 
 
 
+// Khi người dùng kéo
 progressBar.addEventListener("input", () => {
-  // Cập nhật thời gian audio
   audioPlayer.currentTime = (progressBar.value / 100) * audioPlayer.duration;
+  updateProgressBar();
+});
 
-  // Cập nhật màu thanh trượt (Chrome / Webkit)
+// Khi audio tự chạy
+audioPlayer.addEventListener("timeupdate", () => {
+  const value = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+  progressBar.value = value;
+  updateProgressBar();
+});
+
+// Hàm cập nhật màu gradient
+function updateProgressBar() {
   const value = progressBar.value;
   progressBar.style.background = `linear-gradient(to right, deeppink 0%, deeppink ${value}%, #ccc ${value}%, #ccc 100%)`;
-});
+}
 
 audioPlayer.addEventListener("timeupdate", () => {
   progressBar.value = (audioPlayer.currentTime / audioPlayer.duration) * 100 || 0;
