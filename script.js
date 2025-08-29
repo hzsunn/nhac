@@ -201,6 +201,11 @@ function playTrack(index) {
     });
   }
 }
+// đảm bảo khi audio phát thì metadata luôn được sync
+audioPlayer.addEventListener("play", () => {
+  const track = tracks[currentTrackIndex];
+  updateMediaSession(track);
+});
 
 playBtn.addEventListener("click", () => {
   if (audioPlayer.paused) {
