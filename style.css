@@ -226,10 +226,10 @@ body::before {
 
 #progress-bar {
   -webkit-appearance: none; /* Chrome, Safari */
-  width: 150px;
-  height: 8px;
+  width: 100px;
+  height: 5px;
   border-radius: 5px;
-  background: #ccc; /* màu nền mặc định */
+  background: deeppink; /* màu nền mặc định */
   outline: none;
   cursor: pointer;
 }
