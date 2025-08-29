@@ -1,4 +1,4 @@
-const commonThumbnail = "favicon.ico";
+const commonThumbnail = "huyen.JPG";
  
 const tracks = [
   { name: "Em Ơi Em Đừng Khóc", file: "music/Emoiem.m4a" },
@@ -184,13 +184,8 @@ function playTrack(index) {
   document.body.classList.add("playing");
   wave.classList.add("playing");
 
-  // 👉 Chạy chữ nếu tên dài
-  if (trackTitle.scrollWidth > trackTitle.clientWidth) {
-    trackTitle.classList.add("marquee");
-  } else {
-    trackTitle.classList.remove("marquee");
-  }
- function updateMediaSession(track) {
+ 
+
 // 👉 Cập nhật metadata cho Media Session (hiện ở notification / lockscreen)
   if ("mediaSession" in navigator) {
     navigator.mediaSession.metadata = new MediaMetadata({
