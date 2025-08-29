@@ -191,7 +191,7 @@ function playTrack(index) {
   } else {
     trackTitle.classList.remove("marquee");
   }
- 
+ function updateMediaSession(track) {
 // 👉 Cập nhật metadata cho Media Session (hiện ở notification / lockscreen)
   if ("mediaSession" in navigator) {
     navigator.mediaSession.metadata = new MediaMetadata({
