@@ -236,30 +236,7 @@ nextBtn.addEventListener("click", () => {
   currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
   playTrack(currentTrackIndex);
 });
-// 👉 Điều khiển bằng Media Session API (hiện ở notification Android, Windows media control...)
-if ("mediaSession" in navigator) {
-  navigator.mediaSession.setActionHandler("play", () => {
-    audioPlayer.play();
-    playIcon.classList.remove("fa-play");
-    playIcon.classList.add("fa-pause");
-  });
 
-  navigator.mediaSession.setActionHandler("pause", () => {
-    audioPlayer.pause();
-    playIcon.classList.remove("fa-pause");
-    playIcon.classList.add("fa-play");
-  });
-
-  navigator.mediaSession.setActionHandler("previoustrack", () => {
-    currentTrackIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length;
-    playTrack(currentTrackIndex);
-  });
-
-  navigator.mediaSession.setActionHandler("nexttrack", () => {
-    currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
-    playTrack(currentTrackIndex);
-  });
-}
 
 
 progressBar.addEventListener("input", () => {
