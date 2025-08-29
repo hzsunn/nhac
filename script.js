@@ -184,6 +184,22 @@ function playTrack(index) {
   playIcon.classList.add("fa-pause");
   document.body.classList.add("playing");
   wave.classList.add("playing");
+
+// 👉 Cập nhật metadata cho Media Session (hiện ở notification / lockscreen)
+  if ("mediaSession" in navigator) {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: track.name,
+      artist: "Đặng Hồng",
+      album: "Tài sản của Huyền",
+      artwork: [
+        { src: commonThumbnail, sizes: "96x96", type: "image/png" },
+        { src: commonThumbnail, sizes: "128x128", type: "image/png" },
+        { src: commonThumbnail, sizes: "192x192", type: "image/png" },
+        { src: commonThumbnail, sizes: "256x256", type: "image/png" },
+        { src: commonThumbnail, sizes: "512x512", type: "image/png" }
+      ]
+    });
+  }
 }
 
 playBtn.addEventListener("click", () => {
@@ -207,11 +223,35 @@ prevBtn.addEventListener("click", () => {
   playTrack(currentTrackIndex);
 });
 
+
 nextBtn.addEventListener("click", () => {
   currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
   playTrack(currentTrackIndex);
 });
+// 👉 Điều khiển bằng Media Session API (hiện ở notification Android, Windows media control...)
+if ("mediaSession" in navigator) {
+  navigator.mediaSession.setActionHandler("play", () => {
+    audioPlayer.play();
+    playIcon.classList.remove("fa-play");
+    playIcon.classList.add("fa-pause");
+  });
 
+  navigator.mediaSession.setActionHandler("pause", () => {
+    audioPlayer.pause();
+    playIcon.classList.remove("fa-pause");
+    playIcon.classList.add("fa-play");
+  });
+
+  navigator.mediaSession.setActionHandler("previoustrack", () => {
+    currentTrackIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length;
+    playTrack(currentTrackIndex);
+  });
+
+  navigator.mediaSession.setActionHandler("nexttrack", () => {
+    currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
+    playTrack(currentTrackIndex);
+  });
+}
 
 
 progressBar.addEventListener("input", () => {
