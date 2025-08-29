@@ -238,7 +238,7 @@ body::before {
 #progress-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 13px;
-  height: 7px;
+  height: 13px;
   border-radius: 50%;
   background: hotpink; /* màu nút trượt */
   cursor: pointer;
