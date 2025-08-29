@@ -225,46 +225,11 @@ body::before {
 }
 
 #progress-bar {
-  -webkit-appearance: none; /* Chrome, Safari */
+  
   width: 100px;
-  height: 5px;
-  border-radius: 5px;
-  background: #ccc; /* màu nền mặc định */
-  outline: none;
-  cursor: pointer;
+  
 }
 
-/* Thumb */
-#progress-bar::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: hotpink; /* màu nút trượt */
-  cursor: pointer;
-  margin-top: -4px; /* canh giữa track */
-}
-
-/* Firefox */
-#progress-bar::-moz-range-track {
-  height: 8px;
-  border-radius: 5px;
-  background: #ccc;
-}
-
-#progress-bar::-moz-range-progress {
-  background: deeppink; /* phần đã đi qua */
-  height: 8px;
-  border-radius: 5px;
-}
-
-#progress-bar::-moz-range-thumb {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: hotpink;
-  cursor: pointer;
-}
 
 /* Sóng nhạc */
 .waveform {
