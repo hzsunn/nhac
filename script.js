@@ -61,7 +61,6 @@ const tracks = [
   { name: "Giấc Mơ 1 Cuộc Tình", file: "music/Gm1ct.m4a" },
   { name: "Giả Vờ Nhưng Anh Yêu Em", file: "music/Gvnaye.m4a" },
   { name: "Hình Bóng Của Mây", file: "music/Hinhbongcuamay.m4a" },
-  { name: "Sợ Phải Kết Thúc", file: "music/Sophaiketthuc.m4a" },
   { name: "Tình Đẹp Đến Mấy Cũng Tàn", file: "music/tanthui.m4a" },
   { name: "Trả Cho Em", file: "music/Trachoem.m4a" },
   { name: "Tình Thương Phu Thê", file: "music/Ttpt.m4a" },
