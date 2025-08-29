@@ -229,7 +229,7 @@ body::before {
   width: 100px;
   height: 5px;
   border-radius: 5px;
-  background: deeppink; /* màu nền mặc định */
+  background: #ccc; /* màu nền mặc định */
   outline: none;
   cursor: pointer;
 }
@@ -237,8 +237,8 @@ body::before {
 /* Thumb */
 #progress-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 16px;
-  height: 16px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: hotpink; /* màu nút trượt */
   cursor: pointer;
@@ -253,7 +253,7 @@ body::before {
 }
 
 #progress-bar::-moz-range-progress {
-  background: hotpink; /* phần đã đi qua */
+  background: deeppink; /* phần đã đi qua */
   height: 8px;
   border-radius: 5px;
 }
