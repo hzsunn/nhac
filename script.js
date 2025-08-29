@@ -207,6 +207,15 @@ audioPlayer.addEventListener("play", () => {
   updateMediaSession(track);
 });
 
+trackTitle.textContent = track.name;
+
+// 👉 Nếu tên dài hơn khung thì bật hiệu ứng marquee
+if (trackTitle.scrollWidth > trackTitle.clientWidth) {
+  trackTitle.classList.add("marquee");
+} else {
+  trackTitle.classList.remove("marquee");
+}
+
 playBtn.addEventListener("click", () => {
   if (audioPlayer.paused) {
     audioPlayer.play();
