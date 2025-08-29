@@ -240,7 +240,12 @@ nextBtn.addEventListener("click", () => {
 
 
 progressBar.addEventListener("input", () => {
+  // Cập nhật thời gian audio
   audioPlayer.currentTime = (progressBar.value / 100) * audioPlayer.duration;
+
+  // Cập nhật màu thanh trượt (Chrome / Webkit)
+  const value = progressBar.value;
+  progressBar.style.background = `linear-gradient(to right, deeppink 0%, deeppink ${value}%, #ccc ${value}%, #ccc 100%)`;
 });
 
 audioPlayer.addEventListener("timeupdate", () => {
