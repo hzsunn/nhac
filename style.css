@@ -183,24 +183,26 @@ body::before {
 }
 
 
-#track-title {
-  font-weight: bold;
-  color: white;
-  max-width: 200px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+/* Khung bọc */
+.track-title {
+  overflow: hidden;      /* ẩn phần thừa */
+  white-space: nowrap;   /* không xuống dòng */
+  width: 200px;          /* hoặc 100% nếu muốn theo khung cha */
 }
+
+/* Chữ chạy ngang */
 .track-title span {
   display: inline-block;
-  padding-left: 100%;        /* tạo khoảng trống để chạy lặp */
+  padding-left: 100%;        /* khoảng trống chạy lặp */
+  font-weight: bold;
+  color: white;
   animation: marquee 10s linear infinite;
 }
 
 /* Hiệu ứng chạy ngang */
 @keyframes marquee {
   from { transform: translateX(0%); }
-  to { transform: translateX(-100%); }
+  to   { transform: translateX(-100%); }
 }
 
 #track-artist {
