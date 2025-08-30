@@ -245,7 +245,16 @@ input[type="range"]::-webkit-slider-runnable-track {
   border-radius: 5px;
   background: linear-gradient(to right, #ff4da6 0%, #ff4da6 var(--progress, 0%), white var(--progress, 0%), white 100%);
 }
-
+/* Nút kéo */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ff4da6;
+  cursor: pointer;
+  margin-top: -4px;
+}
 
 /* Firefox */
 input[type="range"]::-moz-range-progress {
