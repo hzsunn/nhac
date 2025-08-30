@@ -191,6 +191,17 @@ body::before {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.track-title span {
+  display: inline-block;
+  padding-left: 100%;        /* tạo khoảng trống để chạy lặp */
+  animation: marquee 10s linear infinite;
+}
+
+/* Hiệu ứng chạy ngang */
+@keyframes marquee {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-100%); }
+}
 
 #track-artist {
   font-size: 20px;
