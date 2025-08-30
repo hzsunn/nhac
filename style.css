@@ -251,7 +251,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #ff4da6;
+  background: white;
   cursor: pointer;
   margin-top: -4px;
 }
