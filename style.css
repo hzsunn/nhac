@@ -332,7 +332,9 @@ input[type="range"]::-moz-range-thumb {
 
 .info {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;  /* nằm ngang */
+  align-items: center;  /* căn giữa theo chiều dọc */
+  gap: 5px;             /* khoảng cách giữa title và artist */
 }
 
 
