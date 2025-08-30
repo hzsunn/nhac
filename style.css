@@ -229,7 +229,49 @@ body::before {
   width: 100px;
   
 }
+/* Thanh progress bar */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #f5c0d0; /* nền nhạt */
+  border-radius: 5px;
+  outline: none;
+}
 
+/* Phần đã chạy (màu hồng) trên Chrome, Safari */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #ff4da6 0%, #ff4da6 var(--progress, 0%), #f5c0d0 var(--progress, 0%), #f5c0d0 100%);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ff4da6;
+  cursor: pointer;
+  margin-top: -4px;
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-progress {
+  background: #ff4da6;
+  height: 6px;
+}
+input[type="range"]::-moz-range-track {
+  background: #f5c0d0;
+  height: 6px;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ff4da6;
+  cursor: pointer;
+}
 
 /* Sóng nhạc */
 .waveform {
