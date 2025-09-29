@@ -4,6 +4,7 @@ const tracks = [
   { name: "Em Ơi Em Đừng Khóc", file: "music/Emoiem.m4a" },
  { name: "Còn Gì Đẹp Hơn", file: "music/Cgdh.m4a" },
   { name: "Dạ Vũ", file: "music/Davu.m4a" },
+ { name: "Chờ Anh Nhé", file: "music/Choanhnhe.m4a" },
   { name: "Ngây Thơ", file: "music/Ngaytho.m4a" },
   { name: "Bên Trên Tầng Lầu", file: "music/Bttl.m4a" },
   { name: "Ngày Em Đẹp Nhất", file: "music/Ngayemdepnhat.m4a" },
